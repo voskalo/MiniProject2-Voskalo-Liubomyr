@@ -1,0 +1,23 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> /init | bash
+Thinking...
+Created .claudeignore. I will now ignore node_modules, venv, and cache files.
+
+> Create a CLAUDE.md file with my project rules.
+
+Thinking...
+Running tool: write CLAUDE.md
+
+CLAUDE.md created:
+# MovieMatch Development Rules
+- Tech Stack: FastAPI, SQLAlchemy, PostgreSQL.
+- Constraints:
+  * Use Linked Lists (Node class) for stacks/queues.
+  * First player index must be 0.
+  * Code must be PEP8 compliant (use Black/Isort).
+
+> # Instruction: Always use async/await for database operations in main.py.
+
+Thinking...
+Memory updated. I will strictly use asynchronous database calls for this project.

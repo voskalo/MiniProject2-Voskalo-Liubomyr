@@ -1,0 +1,24 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % mkdir -p ~/.claude/commands
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % cat <<EOF > ~/.claude/commands/check_code.sh
+#!/bin/bash
+echo "Starting Code Quality Audit for Liubomyr..."
+black --check .
+pytest tests/
+flake8 .
+EOF
+
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % chmod +x ~/.claude/commands/check_code.sh
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> /check_code
+
+Thinking...
+Running tool: bash ~/.claude/commands/check_code.sh
+
+Output:
+Starting Code Quality Audit...
+All files formatted with Black.
+test_movie_logic.py: PASSED
+test_auth.py: PASSED
+
+Claude: Your project is healthy! No PEP8 violations found.

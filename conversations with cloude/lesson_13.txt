@@ -1,0 +1,33 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> I'm afraid of losing my movies.db. Block any 'rm' command targeting it.
+
+Thinking...
+Running tool: edit .claude/settings.json
+
+Added Safety Hook:
+{
+  "PreToolUse": [
+    {
+      "matcher": "Bash",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "if [[ \$ARG == *'rm'* && \$ARG == *'movies.db'* ]]; then echo '🚫 BLOCK: You cannot delete the database file!'; exit 1; fi"
+        }
+      ]
+    }
+  ]
+}
+
+> Try to delete the database to verify the hook.
+
+Thinking...
+Running tool: bash "rm movies.db"
+
+Output:
+BLOCK: You cannot delete the database file!
+Error: Hook failed.
+
+Claude: The safety hook worked. Your SQLite database is protected
+from accidental deletion on your MacBook-Air.

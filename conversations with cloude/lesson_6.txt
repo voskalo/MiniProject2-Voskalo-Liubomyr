@@ -1,0 +1,26 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> /stats
+Session Token Usage:
+- Used: 38,400
+- Remaining: 161,600
+- Cost: $0.11
+
+> We've done a lot of work on the backend. Summarize it and clear the history.
+
+Thinking...
+Running tool: /compact
+
+Summary:
+- Initialized FastAPI with movie matching logic.
+- Implemented Linked List based queue for movie processing.
+- Added favorite movie endpoints.
+
+Context compacted.
+
+> /clear
+History cleared. Starting fresh.
+
+> Now, help me write a Python script for Titanic Analysis using pandas.
+
+Ready. I have the project context, but the conversation history is fresh.

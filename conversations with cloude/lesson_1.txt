@@ -1,0 +1,26 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+Connected to Claude Code (v0.1.x)
+Current project: /Users/lubcikvoskalo/MiniProject2-Voskalo-Liubomyr
+
+> Analyze my MovieMatch project and explain the matching logic.
+
+Thinking...
+Running tool: ls -R
+Running tool: cat main.py
+
+I've reviewed your MovieMatch repository.
+- Entry Point: main.py initializes FastAPI and defines the core API endpoints.
+- Models: Found SQLAlchemy models for Users and Movies in the models/ directory.
+
+Matching Logic:
+Currently, your `get_match` function uses a basic intersection of genres
+between the user's profile and the movie metadata.
+
+Note: I see you have a custom implementation for player rankings.
+I will ensure that for any player-related logic, the first player
+is always assigned to index 0.
+
+> Great. Also, remember that we use Linked Lists for sequence storage here.
+
+Understood. I will prioritize the `Node` and `LinkedList` classes
+over standard Python lists for all sequence-based data structures.

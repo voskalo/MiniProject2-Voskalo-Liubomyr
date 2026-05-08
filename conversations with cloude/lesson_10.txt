@@ -1,0 +1,26 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % cat <<EOF > .claude/settings.json
+{
+  "PreToolUse": [
+    {
+      "matcher": "Bash",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "echo 'Claude is running a bash command on your MacBook-Air...'"
+        }
+      ]
+    }
+  ]
+}
+EOF
+
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> List all files in the current directory.
+
+Thinking...
+Claude is running a bash command on your MacBook-Air...
+Running tool: ls
+
+Claude: I see you've set up a Project-level hook. This is perfect
+for tracking my actions within this specific lab folder.

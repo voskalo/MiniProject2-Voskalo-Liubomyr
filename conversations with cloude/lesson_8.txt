@@ -1,0 +1,22 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude mcp add sqlite-explorer npx @modelcontextprotocol/server-sqlite --db-path ./movies.db
+
+[SUCCESS] MCP Server 'sqlite-explorer' added to your MacBook-Air.
+
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> Use the database explorer to find all movies released after 2020.
+
+Thinking...
+Running tool: mcp__sqlite_explorer__query_sql
+"SELECT title, release_year FROM movies WHERE release_year > 2020"
+
+Results:
+1. Dune: Part Two (2024)
+2. Oppenheimer (2023)
+3. Spider-Man: Across the Spider-Verse (2023)
+
+> Based on this data, should we update the 'Movie' model in SQLAlchemy?
+
+Thinking...
+I noticed some movies have 'None' for the description. We should
+add a constraint to ensure the description is required.

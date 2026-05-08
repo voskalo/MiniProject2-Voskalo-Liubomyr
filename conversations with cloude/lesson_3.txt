@@ -1,0 +1,19 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % curl -fsSL https://claude.ai/install.sh | bash
+[INFO] Downloading Claude Code for macOS...
+[INFO] Installing to /usr/local/bin/claude
+[SUCCESS] Claude Code installed on MacBook-Air.
+
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+Please sign in.
+Your one-time code: LUB-VOS-2026
+Opening browser...
+
+[SUCCESS] Authenticated as Liubomyr Voskalo (voskalo@ucu.edu.ua).
+
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude --version
+claude-code/0.1.15
+
+> Hello. I am a student at UCU. Let's start working on my Decision Analytics lab.
+
+Hello Liubomyr! Ready to help with your Python labs. I see the
+MovieMatch project is active. How can we optimize your code today?

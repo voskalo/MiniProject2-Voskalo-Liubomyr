@@ -1,0 +1,23 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> (Planning Mode)
+> I need to add a "Favorites" feature for movies.
+
+Thinking...
+Plan for "Favorites" feature:
+1. Create a `UserFavorites` association table in models.py.
+2. Define a POST endpoint `/movies/favorite/{id}` in main.py.
+3. Write a helper function in matcher.py to check if a movie is favorited.
+
+Do you approve this plan?
+
+> Yes, but Ultrathink on the database schema. Is a many-to-many relationship better?
+
+Thinking... (Ultrathink Mode)
+[Extended analysis of database normalization...]
+Yes, a Many-to-Many relationship is superior here because a user can
+favorite many movies, and a movie can be favorited by many users.
+I will implement this using an association table named `user_movie_favorites`.
+
+Running tool: edit models.py
+... changes applied ...

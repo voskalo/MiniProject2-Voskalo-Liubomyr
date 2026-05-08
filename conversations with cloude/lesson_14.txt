@@ -1,0 +1,22 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % cat <<EOF > project_audit.py
+import anthropic_claude_code as ccode
+
+def perform_audit():
+    print("🤖 Starting automated project audit...")
+    session = ccode.Session(project_path=".")
+
+    # Requirement: Ensure Linked Lists are used correctly
+    report = session.run("Find any standard lists used for stack operations and replace them with our Node-based Linked List.")
+    print(f"Audit Result: {report.summary}")
+
+if __name__ == "__main__":
+    perform_audit()
+EOF
+
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % python3 project_audit.py
+🤖 Starting automated project audit...
+Thinking...
+Audit Result: Identified 2 files using native Python lists for queues.
+Refactored them to use the `LinkedList` class as per CLAUDE.md.
+
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % echo "Course complete. All lessons applied to MovieMatch."

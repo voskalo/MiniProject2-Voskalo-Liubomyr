@@ -1,0 +1,21 @@
+lubcikvoskalo@MacBook-Air MiniProject2-Voskalo-Liubomyr % claude
+
+> Use grep to find where I define the database engine.
+
+Thinking...
+Running tool: grep -r "create_engine" .
+
+Observation:
+./database.py:engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
+
+> Now, check if there are any hardcoded API keys in the source code.
+
+Thinking...
+Running tool: grep -rE "API_KEY|SECRET" .
+
+Results:
+./.env.example:MOVIE_API_KEY=your_key_here
+./auth.py:SECRET_KEY = os.getenv("SECRET_KEY")
+
+Everything looks secure. You are using environment variables as expected.
+I also noticed your pytest suite. Should I run the tests for the movie routes?
